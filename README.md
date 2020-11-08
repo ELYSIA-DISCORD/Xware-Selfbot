@@ -6,7 +6,7 @@ Discord Self Bot / Automated User!
 Run the `install.bat` file so it can install all the files\
 Wait until it's Done
 # Setup
-In order to get the automated user / Self bot to work.\
+In order to get the automated user / Self bot to work. \
 1. Navigate to the botconfig.json file.
 2. Change the token to the users token. (Watch a tutorial if you don't know how) (Just type in how to get my token on yt)
 3. Change prefix to a desired prefix
