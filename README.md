@@ -22,7 +22,8 @@ Your config file should also look like this
     "botID": "bot-id",
     "nitro_sniper": false,
     "whitelisted": [""]
-}```
+}
+```
 
 
 # Activating the self bot / automated user
