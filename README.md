@@ -11,8 +11,8 @@ In order to get the automated user / Self bot to work.
 2. Change the token to the users token. (Watch a tutorial if you don't know how) (Just type in how to get my token on yt)
 3. Change prefix to a desired prefix
 4. Change botid to the users ID
-5. Nitro sniper is optionable. So change it to true if you want to snipe nitro gifts in servers you're in
-6. Whitelisted is also Optionable but make sure you have your ID in it.
+5. Nitro sniper is Optional. So change it to true if you want to snipe nitro gifts in servers you're in
+6. Whitelisted is also Optional but make sure you have your ID in it.
 7. And you're done!
 Your config file should also look like this ```js
 {
