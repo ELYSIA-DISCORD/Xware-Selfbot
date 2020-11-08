@@ -14,7 +14,7 @@ In order to get the automated user / Self bot to work.
 5. Nitro sniper is Optional. So change it to true if you want to snipe nitro gifts in servers you're in
 6. Whitelisted is also Optional but make sure you have your ID in it.
 7. And you're done!
-Your config file should also look like this ```js
+Your config file should also look like this ```json
 {
     "token": "token-here",
     "prefix": "prefix-here",
