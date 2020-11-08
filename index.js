@@ -134,7 +134,7 @@ bot.on("message", message => {
             if(user){
                 message.channel.send(user.displayAvatarURL)
             } else {
-                message.reply("What the fuck. what user u want me to do")
+                message.reply("Please mention a user to get there avatar!")
             }
         }
         if(cmd === "embedmsg") {
