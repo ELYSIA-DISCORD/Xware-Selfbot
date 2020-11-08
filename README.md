@@ -30,6 +30,7 @@ Just simply run the `start.bat` file!
 # Jai Automated User Discord RULES
 1. Don't just claim the files as yours. That's just dumb...
 2. That's all
+3. Feel absolutely free to change the coding. if you know what you're doing!
 
 # Other Information
 In the `index.js` file if you want the bot to have a different status just replace `with Discord API` to your own text. And if you want it to say watching or something replace the `playing` to either watching streaming or whatever other one(s) there are
