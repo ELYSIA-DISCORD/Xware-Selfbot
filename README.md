@@ -39,7 +39,7 @@ In the `index.js` file if you want the bot to have a different status just repla
 
 # User automation / Self bot risks
 I would strictly recommend that you don't use your main acc's token for this\
-You have the risk of your Account get `DISABLED` or even `BANNED!`\
+You have the risk of your Account getting `DISABLED` or even `BANNED!`\
 So use on an alternative account.
 I am also not responsible for any actions taken when using this project.
 Be Careful and have Fun!
