@@ -22,6 +22,7 @@ Your config file should also look like this ```js
     "nitro_sniper": false,
     "whitelisted": [""]
 }
+}
 ```
 
 
