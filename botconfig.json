@@ -1,0 +1,7 @@
+{
+    "token": "token-here",
+    "prefix": "prefix-here",
+    "botID": "bot-id",
+    "nitro_sniper": false,
+    "whitelisted": [""]
+}
