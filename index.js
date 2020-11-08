@@ -11,7 +11,6 @@ console.log(colors.red("WARNING: Use at your own risk!"))
 console.log(colors.rainbow("Logging in..."))
 bot.on("ready", async() => {
     console.clear()
-    bot.login(token)
     console.log(colors.rainbow(`
     ░░░░░██╗░█████╗░██╗░░░██╗  ░██████╗███████╗██╗░░░░░███████╗██████╗░░█████╗░████████╗
     ░░░░░██║██╔══██╗╚██╗░██╔╝  ██╔════╝██╔════╝██║░░░░░██╔════╝██╔══██╗██╔══██╗╚══██╔══╝
@@ -21,7 +20,7 @@ bot.on("ready", async() => {
     ░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░  ╚═════╝░╚══════╝╚══════╝╚═╝░░░░░╚═════╝░░╚════╝░░░░╚═╝░░░
     `))
     console.log(colors.green(`${bot.user.tag} has logged in with an ID of ${botID}`))
-    console.log(colors.green(`Self bot by ${bot.users.get("415387271240613898").tag} with an ID of 415387271240613898`))
+    console.log(colors.green(`Self bot by Jai#5827 with an ID of 415387271240613898`))
     console.log(colors.green("To view bot commands use the command: cmds (Or if you renamed the command use that cmd)"))
     bot.user.setActivity("with Discord API", {type: "PLAYING"})
 })
