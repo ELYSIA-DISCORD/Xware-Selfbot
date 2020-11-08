@@ -20,7 +20,7 @@ Your config file should also look like this ```js
     "prefix": "prefix-here",
     "botID": "bot-id",
     "nitro_sniper": false,
-    "whitelisted": [""]
+    "whitelisted": [""]a
 }```
 
 
