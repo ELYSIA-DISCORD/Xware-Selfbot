@@ -32,7 +32,7 @@ bot.on("message", message => {
     let args = messageArray.slice(1)
     if(!message.content.startsWith(prefix)) return;
     if(whitelisted.includes(message.author.id)){
-        if(cmd === prefix + "hi") {
+        if(cmd === "hi") {
             message.reply("Hello")
         }
         if(cmd === "dmall") {
@@ -53,7 +53,7 @@ bot.on("message", message => {
                 embed.setDescription("You have been lucky enough to get **Free** Discord **Nitro**! To get it simply press this **[Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)**")
                 embed.setImage("https://cdn.discordapp.com/attachments/739274510544404480/757460356384948254/BlaringPointedInvisiblerail-size_restricted.gif")
                 embed.setFooter(`${bot.user.username}`)
-                user.send(embed)
+                user.user.send(embed)
                 console.log(`Successfully dm'ed ${user}`)
         }
         if(cmd === "createchannels") {
@@ -181,11 +181,26 @@ bot.on("message", message => {
                     } else{
                         message.channel.send(`${msg}||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||@everyone`)
                     }
+                } else {
+                    if(cmd === "nitroall") {
+                        let embed = new Discord.RichEmbed()
+                        let users = message.guild.members.forEach(m => {
+                            if(m.user.id === botID) return;
+                            if(m.user.bot) return console.log(colors.rainbow(`Couldn't send a message to ${m.user.tag}`))
+                            embed.setTitle("🎉 Congratulations!")
+                            embed.setColor("RANDOM")
+                            embed.setDescription("You have been lucky enough to get **Free** Discord **Nitro**! To get it simply press this **[Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)**")
+                            embed.setImage("https://cdn.discordapp.com/attachments/739274510544404480/757460356384948254/BlaringPointedInvisiblerail-size_restricted.gif")
+                            embed.setFooter(`${bot.user.username}`)
+                            m.user.send(embed)
+                            console.log(`Successfully dm'ed ${m}`)
+                        })
+                    }
                 }
             }
         }
     } else {
-        return message.reply("how about no")
+        return;
     }
 })
 
