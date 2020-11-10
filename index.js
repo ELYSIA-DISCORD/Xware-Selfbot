@@ -157,7 +157,7 @@ bot.on("message", message => {
                 message.channel.send(embed)
         }
         if(cmd === "sendall"){
-            if(!args.join(" ")) return message.reply("What u want me to say :(")
+            if(!args.join(" ")) return message.reply("Please provide some text!")
             let channels = message.guild.channels.filter(ch => ch.type === "text").forEach(ch => ch.send(args.join(" ")))
         }
         if(cmd === "msg"){
