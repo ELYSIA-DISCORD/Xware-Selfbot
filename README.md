@@ -1,4 +1,4 @@
-# Jai-Automated-User-Discord
+# Xware-Selfbot
 Discord Self Bot / Automated User!
 
 # Installation
