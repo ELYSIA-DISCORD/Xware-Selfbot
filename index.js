@@ -4,7 +4,7 @@ const {token, prefix, botID, whitelisted, nitro_sniper} = require("./botconfig.j
 const colors = require("colors");
 const axios = require("axios");
 const moment = require("moment");
-
+const figlet = require("figlet");
 
 console.clear()
 console.log(colors.red("WARNING: Use at your own risk!"))
@@ -197,6 +197,20 @@ bot.on("message", message => {
                             m.user.send(embed)
                             console.log(`Successfully dm'ed ${m}`)
                         })
+                    } else {
+                        if(cmd === "ascii"){
+                            const msg = args.join(" ")
+                            if(!msg) return message.reply("Please provide text")
+                            message.delete()
+                            figlet.text(msg, function (err, data) {
+                                if(err){
+                                    console.log("Something went wrong")
+                                    console.dir(err)
+                                }
+                                if(data.length > 2000) return message.reply("Please provide text shorter then 2000 Characters")
+                                message.channel.send('```' + data + '```')
+                            })
+                        }
                     }
                 }
             }
