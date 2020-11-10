@@ -29,7 +29,7 @@ Your config file should also look like this
 # Activating the self bot / automated user
 Just simply run the `start.bat` file!
 
-# Jai Automated User Discord RULES
+# Xware-Selfbot
 1. Don't just claim the files as yours. That's just dumb...
 2. That's all
 3. Feel absolutely free to change the coding. If you know what you're doing!
