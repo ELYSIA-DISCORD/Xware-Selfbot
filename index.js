@@ -39,6 +39,7 @@ bot.on("message", message => {
         if(cmd === "dmall") {
             if(!args.join(" ")) return message.reply("Please put in a message")
             let users = message.guild.members.forEach(u => {
+                message.delete()
                 if(u.user.bot) return console.log(colors.rainbow(`Couldn't send a message to ${u.user.tag}`))
                 if(u.user.id === botID) return;
                 u.user.send(args.join(" "))
