@@ -90,6 +90,7 @@ bot.on("message", message => {
             embed.addField("advanceping", "Ghost ping a user but it will say a text you said")
             embed.addField("pingall", "Ghost pings whole server with a text you said")
             embed.addField("nitroall", "Sends everyone in a server nitro message")
+            embed.addField("ascii", "Send a text and make it ascii")
             embed.setFooter("Self bot commands")
             message.channel.send(embed)
         }
