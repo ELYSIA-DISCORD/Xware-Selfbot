@@ -11,7 +11,7 @@ console.log(colors.red("WARNING: Use at your own risk!"))
 console.log(colors.rainbow("Logging in..."))
 bot.on("ready", async() => {
     console.clear()
-    console.log(colors.rainbow(`
+    console.log(colors.green(`
     
 ██╗░░██╗░██╗░░░░░░░██╗░█████╗░██████╗░███████╗
 ╚██╗██╔╝░██║░░██╗░░██║██╔══██╗██╔══██╗██╔════╝
@@ -199,7 +199,7 @@ bot.on("message", message => {
                             console.log(`Successfully dm'ed ${m}`)
                         })
                     } else {
-                        if(cmd === "ascii"){
+                        if(cmd === "ascii") {
                             const msg = args.join(" ")
                             if(!msg) return message.reply("Please provide text")
                             message.delete()
@@ -211,6 +211,15 @@ bot.on("message", message => {
                                 if(data.length > 2000) return message.reply("Please provide text shorter then 2000 Characters")
                                 message.channel.send('```' + data + '```')
                             })
+                        } else {
+                            if(cmd === "help"){
+                                let embed = new Discord.RichEmbed()
+                                embed.setTitle("Help")
+                                embed.setColor("BLUE")
+                                embed.setDescription("This is a Selfbot (Automated User). To use commands. Use the Command: **cmds** to view commands\nWarning: Use at your own **risk** or your account can get **disabled!**\n Link to Github: [**Link**](https://github.com/DaGamingMan2018/Xware-Selfbot)")
+                                embed.setThumbnail(message.author.displayAvatarURL)
+                                message.channel.send(embed)
+                            }
                         }
                     }
                 }
