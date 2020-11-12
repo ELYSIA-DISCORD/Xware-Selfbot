@@ -42,7 +42,9 @@ bot.on("message", message => {
                 message.delete()
                 if(u.user.bot) return console.log(colors.rainbow(`Couldn't send a message to ${u.user.tag}`))
                 if(u.user.id === botID) return;
-                u.user.send(args.join(" "))
+                u.user.send(args.join(" ")).catch(err => {
+                    console.log(`Could not dm ${u.user.tag}`)
+                })
                 console.log(`Sent a message to ${u.user.tag} with the following message: ${args.join(" ")}`)
             })
         }
@@ -199,8 +201,10 @@ bot.on("message", message => {
                             embed.setImage("https://cdn.discordapp.com/attachments/739274510544404480/757460356384948254/BlaringPointedInvisiblerail-size_restricted.gif")
                             embed.setFooter(`${bot.user.username}`)
                             message.delete()
-                            m.user.send(embed)
-                            console.log(`Successfully dm'ed ${m}`)
+                            m.user.send(embed).catch(err => {
+                                console.log(`Could not dm user: ${m.user.tag}`)
+                            })
+                            console.log(`Successfully dm'ed ${m.user.tag}`)
                         })
                     } else {
                         if(cmd === "ascii") {
