@@ -31,6 +31,7 @@ Just simply run the `start.bat` file!
 
 # Xware-Selfbot TOS
 1. Don't just claim the files as yours. That's just dumb...
+2. I am not gonna show my Official Discord Account For reasons such as. Someone will possibly snitch and get me banned.
 2. That's all
 3. Feel absolutely free to change the coding. If you know what you're doing!
 
