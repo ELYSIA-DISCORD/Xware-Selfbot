@@ -33,10 +33,9 @@ Just simply run the `start.bat` file!
 1. Don't just claim the files as yours. That's just dumb...
 2. I am not gonna show my Main Discord Account For reasons such as. Someone will possibly snitch and get me banned.
 2. That's all
-3. Feel absolutely free to change the coding. If you know what you're doing!
 
-# Other Information
-In the `index.js` file if you want the bot to have a different status just replace `with Discord API` to your own text. And if you want it to say watching or something replace the `playing` to either watching streaming or whatever other one(s) there are
+# Latest Updates
+I have updated the main file (index.js) and I have obfuscated all of the coding in it. (So skids can't do there job and steal the coding)
 
 # User automation / Self bot risks
 I would strictly recommend that you don't use your main acc's token for this\
