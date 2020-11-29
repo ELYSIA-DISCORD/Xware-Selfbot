@@ -27,7 +27,7 @@ Your config file should also look like this
 
 
 # Activating the self bot / automated user
-Just simply run the `start.bat` file!
+Just simply run the `start.bat` file.
 
 # Xware-Selfbot TOS
 1. Don't just claim the files as yours. That's just dumb...
