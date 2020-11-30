@@ -30,7 +30,7 @@ Your config file should also look like this
 After you're done all of the steps run the `start.bat` file.
 
 # Xware-Selfbot TOS
-1. Don't just claim the files as yours. That's just dumb...
+1. Don't just claim the files as yours.
 2. I am not gonna show my Main Discord Account For reasons such as. Someone will possibly snitch and get me banned.
 2. That's all
 
