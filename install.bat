@@ -1,5 +1,5 @@
 @echo off
-title npm
+title Installing Dependencies
 :top
 npm i
 :Exit
