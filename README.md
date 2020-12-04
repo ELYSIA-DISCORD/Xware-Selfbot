@@ -4,7 +4,7 @@
 Discord Self Bot / Automated User!
 
 # Discord Server Invite!
-We now have a Discord Server! the invite: [Link](https://discord.gg/uBHNqbeFcH)
+We now have a Discord Server! the invite: **[Link](https://discord.gg/uBHNqbeFcH)**
 
 # Installation
 
