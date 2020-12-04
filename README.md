@@ -1,6 +1,9 @@
 # Xware-Selfbot
 Discord Self Bot / Automated User!
 
+# Discord Server Invite!
+We now have a Discord Server! the invite: [Link](https://discord.gg/uBHNqbeFcH)
+
 # Installation
 
 Run the `install.bat` file so it can install all the files\
