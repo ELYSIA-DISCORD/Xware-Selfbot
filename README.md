@@ -3,6 +3,15 @@
 # Xware-Selfbot
 Discord Self Bot / Automated User!
 
+
+# BEFORE YOU CONTINUE
+Selfbots are strictly against the Discord Terms of Service. Your account can get Disabled if you're caught using this!
+Running the start.bat file and actually using this Project is basically you requesting Discord to Disable your account.
+If you want your main account to be Safe. I would Highly request you use this on an Alternative account!
+<div align="center">
+      <p><i><v>Fun, Trolling, Raiding, and more! </b></i></p>
+      </div>
+      
 # Discord Server Invite!
 We now have a Discord Server! the invite: **[Link](https://discord.gg/uBHNqbeFcH)**
 
@@ -41,10 +50,3 @@ After you're done all of the steps run the `start.bat` file.
 
 # Latest Updates
 I have updated the main file (index.js) and I have obfuscated all of the coding in it. (So skids can't do there job and steal the coding)
-
-# User automation / Self bot risks
-I would strictly recommend that you don't use your main acc's token for this\
-You have the risk of your Account getting `DISABLED` or even `BANNED!`\
-So use on an alternative account.
-I am also not responsible for any actions taken when using this project.
-Be Careful and have Fun!
