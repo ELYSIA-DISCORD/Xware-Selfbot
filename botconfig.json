@@ -3,5 +3,8 @@
     "prefix": "prefix-here",
     "botID": "bot-id",
     "nitro_sniper": false,
-    "whitelisted": [""]
+    "whitelisted": [""],
+    "embedOptions": {
+        "enabled": true
+    }
 }

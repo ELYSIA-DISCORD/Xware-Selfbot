@@ -20,6 +20,19 @@ We now have a Discord Server! the invite: **[Link](https://discord.gg/uBHNqbeFcH
 Run the `install.bat` file so it can install all the files\
 Wait until it's Done
 # Setup
+Before setup your config file should look like this
+```json
+{
+    "token": "token-here",
+    "prefix": "prefix-here",
+    "botID": "bot-id",
+    "nitro_sniper": false,
+    "whitelisted": [""],
+    "embedOptions": {
+        "enabled": true
+    }
+}
+```
 In order to get the automated user / Self bot to work.
 1. Navigate to the botconfig.json file.
 2. Change the token to the users token. (Watch a tutorial if you don't know how) (Just type in how to get my token on yt)
@@ -27,17 +40,9 @@ In order to get the automated user / Self bot to work.
 4. Change botid to the users ID
 5. Nitro sniper is Optional. So change it to true if you want to snipe nitro gifts in servers you're in
 6. Whitelisted is also Optional but make sure you have your ID in it.
+7. Embedoptions are optional. When you use commands that use embeds. You can either set true to false or keep it as true
+(False disabled embeds. True enables embeds)
 7. And you're done!
-Your config file should also look like this
-```json
-{
-    "token": "token-here",
-    "prefix": "prefix-here",
-    "botID": "bot-id",
-    "nitro_sniper": false,
-    "whitelisted": [""]
-}
-```
 
 
 # Turning on the self bot / automated user
