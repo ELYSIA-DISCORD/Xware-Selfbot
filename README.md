@@ -26,6 +26,7 @@ Before setup your config file should look like this
     "token": "token-here",
     "prefix": "prefix-here",
     "botID": "bot-id",
+    "password": "bot-password-here",
     "nitro_sniper": false,
     "whitelisted": [""],
     "embedOptions": {
