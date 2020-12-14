@@ -2,6 +2,7 @@
     "token": "token-here",
     "prefix": "prefix-here",
     "botID": "bot-id",
+    "password": "bot-password-here",
     "nitro_sniper": false,
     "whitelisted": [""],
     "embedOptions": {
